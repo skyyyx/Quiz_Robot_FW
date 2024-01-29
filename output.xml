@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.0rc2 on win32)" generated="2024-01-29T10:39:05.458885" rpa="false" schemaversion="5">
+<suite id="s1" name="TestRF" source="c:\Users\User\Documents\GitHub\Quiz_Robot_FW\TestRF.robot">
+<test id="s1-t1" name="Login and Logout Test" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:39:05.607541" level="INFO">Opening browser 'chrome' to base url 'http://automationexercise.com/login'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:39:05.606543" elapsed="3.976901"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:39:09.584444" level="INFO">Typing text 'demo_user' into text field 'shockchips'.</msg>
+<msg time="2024-01-29T10:39:09.718260" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-29T10:39:09.718260" level="FAIL">Element with locator 'shockchips' not found.</msg>
+<arg>shockchips</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-29T10:39:09.584444" elapsed="0.167816">Element with locator 'shockchips' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>Sky_0866969238</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-29T10:39:09.752260" elapsed="0.001000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=loginButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-29T10:39:09.753260" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Welcome, ${USERNAME}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-01-29T10:39:09.754260" elapsed="0.000000"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath=//a[contains(text(),'Logout')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-29T10:39:09.754260" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-01-29T10:39:09.755259" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-29T10:39:09.755259" elapsed="2.075274"/>
+</kw>
+<status status="FAIL" start="2024-01-29T10:39:05.605541" elapsed="6.224992">Element with locator 'shockchips' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-29T10:39:05.461885" elapsed="6.369647"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestRF">TestRF</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
